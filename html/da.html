@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/public/logo-adarsh.png" />
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.8.1.min.js"></script>
+    <title>AdarshK-Projects</title>
+</head>
+<body>
+     <!-- START: header -->
+   <header>
+    <nav class="header__nav"  data-aos="fade-down" data-aos-duration="700">
+      <div class="header__logo">
+        <img src="\public\logo-adarsh.png" alt="logo">
+      </div>
+
+      <ul class="header__menu">
+        <li>
+          <a href="/index.html#hero">home</a>
+      </li>
+        <li>
+          <a href="/index.html#about">about</a>
+        </li>
+        <li>
+          <a href="/index.html#services">services</a>
+        </li>
+        <li>
+          <a href="/index.html#project">projects</a>
+        </li>
+        <li>
+          <a href="/index.html#contact">contact</a>
+        </li>
+        <li>
+          <a href="assets\AdarshKumarResume.pdf" download="AdarshK_Resume.pdf">resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/adarsh-k-tiwari"><img src="\assets\github.png" alt="github" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/adarsh-k-tiwari/"><img src="\assets\linkedin.png" alt="linkedin" /></a>
+        </li>
+      </ul>
+
+      <ul class="header__menu-mobile" data-aos="fade-down">
+        <li>
+          <img src="/assets/menu.svg" alt="menu" />
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- END: header -->
+  <section id="project-1">
+    <h2 class="subtitle" data-aos="flip-up"  data-aos-duration="1500">data analysis & viz</h2>
+    <!-- First Project -->
+    <div class="about-me__content" data-aos="fade-left">
+      <div class="project1-item_title">
+            Tableau Dashboard - Nutrition Viz
+      </div>
+      <div class="project1-desc-box">
+            This interactive dashboard tracks your daily calorie intake, analyzes meal breakdown, categorizes food healthiness, and reveals top consumed items, empowering informed dietary choices.<br>
+      </div><br>
+      <div class="neumorphic-container">
+        <div id="tableauViz"></div>
+    
+    <script type="text/javascript">
+        var vizDiv = document.getElementById('tableauViz');
+        var vizURL = "https://public.tableau.com/views/NutritionViz_17197800686830/Dashboard1?:language=en-US&:embed=true&:display_count=n&:origin=viz_share_link";
+        var options = {
+            width: '1080px',
+            height: '720px',
+            hideTabs: true,
+            hideToolbar: true
+        };
+        var viz = new tableau.Viz(vizDiv, vizURL, options);
+    </script></div>
+      <br><br><br><br>
+
+<!-- Second Project -->
+        <div class="project1-item_title">
+            Tableau Dashboard - Samsung Stock Price Viz
+        </div>
+        <div class="project1-desc-box">
+            This interactive dashboard tracks Samsung stock performance, visualizing price trends, key metrics, and market comparisons to help you make informed investment decisions.<br>
+        </div><br>
+        <div class="neumorphic-container">
+          <div id="tableauViz2"></div>
+      
+      <script type="text/javascript">
+          var vizDiv = document.getElementById('tableauViz2');
+          var vizURL = "https://public.tableau.com/views/SamsungStockPriceDashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+          var options = {
+              width: '1080px',
+              height: '720px',
+              hideTabs: true,
+              hideToolbar: true
+          };
+          var viz = new tableau.Viz(vizDiv, vizURL, options);
+      </script></div>
+        <br><br><p class="signature">Adarsh</p>
+      </div>
+  </section>
+
+</body>
+</html>
