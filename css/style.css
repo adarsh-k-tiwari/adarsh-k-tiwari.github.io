@@ -44,7 +44,7 @@
   --spacing-l: 24px;
   --spacing-xl: 32px;
   --spacing-xxl: 64px;
-  --width-container: 1080px;
+  --width-container: 1200px;
 }
 
 * {
@@ -68,6 +68,7 @@ body {
     max-height: 100%;
     object-fit: cover;
   }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -79,65 +80,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.neumorphic-container {
-  width: 1150px; /* Slightly larger than the iframe to show the neumorphic effect */
-  height: 800px; /* Slightly larger than the iframe to show the neumorphic effect */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #292828;
-  border-radius: 20px;
-  box-shadow: 20px 20px 60px #020202, -20px -20px 60px #020202;
-  padding: 10px;
-}
 
-#tableauViz {
-  width: 1080px;
-  height: 720px;
-  border-radius: 50px;
-}
-
-.ui-neumorphic-container {
-  width: 680px; /* Slightly larger than the iframe to show the neumorphic effect */
-  height: 360px; /* Slightly larger than the iframe to show the neumorphic effect */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #292828;
-  border-radius: 20px;
-  box-shadow: 20px 20px 60px #020202, -20px -20px 60px #020202;
-  padding: 10px;
-}
-
-.gd-neumorphic-container {
-  width: 1080px; /* Slightly larger than the iframe to show the neumorphic effect */
-  height: 630px; /* Slightly larger than the iframe to show the neumorphic effect */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #292828;
-  border-radius: 20px;
-  box-shadow: 20px 20px 60px #020202, -20px -20px 60px #020202;
-  padding: 10px;
-}
-
-#uiNeu {
-  width: 640px;
-  height: 320px;
-  border-radius: 20px;
-}
-.image-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
-  grid-gap: 10px; /* Spacing between images */
-  margin-top: 5px;
-}
-
-.image-container img {
-  width: 100%; /* Images fill the width of their container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 7px;
-}
 .flex-between {
   display: flex;
   justify-content: space-between;
@@ -171,19 +114,19 @@ a {
 
 /* START: about us media queries */
 @media screen and (max-width: 1024px) {
-  .about-me {
+  .about-us {
     flex-direction: column-reverse;
     margin: 0px;
   }
 
-  .about-me__image-aboutImg {
+  .about-us__image-aboutImg {
     width: 100%;
     float: center;
     z-index:-1;
     object-fit: contain;
   }
 
-  .about-me__content {
+  .about-us__content {
     padding: 0px 64px 0px 64px;
     text-align: justify;
     font-size: 1em;
@@ -191,33 +134,33 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-  .about-me__image-aboutImg {
+  .about-us__image-aboutImg {
     border-right: none;
     width: 100%;
     float: right;
     overflow: clip;
     object-fit: contain;
   }
-  .about-me__content {
+  .about-us__content {
     padding: 0px 128px 0px 64px;
     text-align: justify;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .about-me__image-aboutImg img {
+  .about-us__image-aboutImg img {
     width: 100%;
     float: right;
     overflow: clip;
     object-fit: contain;
   }
 
-  .about-me__image-aboutImg div {
+  .about-us__image-aboutImg div {
     padding: 1rem;
   }
 
 
-  .about-me__content {
+  .about-us__content {
     padding: 0px 0px 0px 64px;
     text-align: justify;
   }

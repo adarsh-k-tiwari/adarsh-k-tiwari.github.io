@@ -1,11 +1,11 @@
-.about-me {
+.about-us {
     display: flex;
-    min-height: 640px;
+    min-height: 720px;
     overflow: hidden;
     flex-direction: row;
   }
   
-  .about-me__image {
+  .about-us__image {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
     position: relative;
   }
   
-  .about-me__image div {
+  .about-us__image div {
     padding: 32px 64px;
     flex: 1;
     display: flex;
@@ -25,11 +25,11 @@
     background-size: cover;
   }
   
-  .about-me__image-aboutImg {  
+  .about-us__image-aboutImg {  
     background-image: url("assets\aboutimg.png")
   }
   
-  .about-me__image-aboutImg img {
+  .about-us__image-aboutImg img {
     width:646px;
     height: 564px;
   }
@@ -45,7 +45,7 @@
     padding-left: 64px;
   }
 
-  .about-me__content {
+  .about-us__content {
     padding-top: 200px;
     padding-left: 64px;
     color: #fff;
@@ -58,7 +58,7 @@
   }
 
   .signature{
-    font-size: 32px;
+    font-size: 48px;
     font-family: var(--alex-brush);
-    padding-top: 32px;
+    padding-top: 70px;
   }
