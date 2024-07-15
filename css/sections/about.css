@@ -61,11 +61,8 @@
     padding-top: 200px;
     padding-left: 64px;
     color: #fff;
-    flex: 1;
-    display: flex;
     justify-content: left;
     text-align: justify;
-    flex-direction: row;
     font-family: var(--roboto);
   }
   .signature{
