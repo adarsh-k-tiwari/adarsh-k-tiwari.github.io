@@ -57,6 +57,17 @@
     font-family: var(--roboto);
   }
 
+  .project__content {
+    padding-top: 200px;
+    padding-left: 64px;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    flex-direction: row;
+    font-family: var(--roboto);
+  }
   .signature{
     font-size: 32px;
     font-family: var(--alex-brush);
