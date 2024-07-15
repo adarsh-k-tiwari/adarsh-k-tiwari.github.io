@@ -26,7 +26,7 @@
   }
   
   .about-us__image-aboutImg {  
-    background-image: url("assets\aboutimg.png")
+    background-image: url("/assets/aboutimg.png")
   }
   
   .about-us__image-aboutImg img {
@@ -58,7 +58,7 @@
   }
 
   .signature{
-    font-size: 48px;
+    font-size: 32px;
     font-family: var(--alex-brush);
-    padding-top: 70px;
+    padding-top: 32px;
   }
