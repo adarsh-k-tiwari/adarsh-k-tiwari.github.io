@@ -6,20 +6,22 @@
   <link rel="icon" type="image/png" href="public\logo-adarsh.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>AdarshK</title>
 </head>
 
 <body>
   <!-- START: header -->
    <header>
-    <nav class="header__nav">
-      <div class="header__logo">
+    <nav class="header__nav"  data-aos="fade-down" data-aos-duration="700">
+      <div class="header__logo" id="hero">
         <img src="public\logo-adarsh.png" alt="logo">
-
-        <div class="header__logo-overlay"></div>
       </div>
 
-      <ul class="header__menu" data-aos="fade-down">
+      <ul class="header__menu">
+        <li>
+          <a href="#hero">home</a>
+        </li>
         <li>
           <a href="#about">about</a>
         </li>
@@ -31,6 +33,9 @@
         </li>
         <li>
           <a href="#contact">contact</a>
+        </li>
+        <li>
+          <a href="assets\AdarshKumarResume.pdf" download="AdarshK_Resume.pdf">resume</a>
         </li>
         <li>
           <a href="https://github.com/adarsh-k-tiwari"><img src="assets/github.png" alt="github" /></a>
@@ -52,29 +57,27 @@
   <!-- START: hero -->
  <section class="hero">
     <div class="hero-image">
-      <img src="assets/frame.png" alt="frame-1" data-aos="fade-up"  />
-      
-      <div class="hero-image__overlay"></div>
+      <img src="assets/frame.png" alt="frame-1" data-aos="fade-up"/>
     </div>
   </section>
   <!-- END: hero -->
 
   <!-- START: about -->
   <section id="about">
-  <div class="subtitle" data-aos="flip-up">about</div>
+  <h2 class="subtitle" data-aos="flip-up"  data-aos-duration="1500">about</h2>
   <div class="about-us" id="about-us">
       <div class="about-us__content" data-aos="fade-left">
-        Greetings! I am Adarsh, a data scientist based in India who works remotely.
-        <br>I have a Bachelor in Computer Science and Engineering with a specialization in Machine Learning. 
-        <br>I have always been passionate about predicting the future, and I believe that machine learning offers the greatest opportunity to do so by leveraging data.
-        <br>Throughout my career, I have amassed vast experience in the FinTech and Healthcare domain, having served in four different companies. This has equipped me with the skill set to simplify complicated queries into easy-to-grasp insights.
+        Greetings! I am Adarsh, a data scientist with a passion for turning data into predictions.
+        <br>I am currently pursuing my MS in Data Science at Texas A&M University, College Station, TX further sharpening my skills and expanding my knowledge.
+        <br>With a Bachelor's degree in Computer Science and Engineering, specializing in Machine Learning, I've honed my skills to peer into the future through the lens of data. My journey through the realms of FinTech and Healthcare has been exhilarating, having had the privilege to contribute to four diverse and dynamic companies.
+        <br>Whether it's crafting predictive models or unraveling the intricacies of data, I'm here to help. If you're looking for a collaborator to bring clarity and foresight to your projects, don't hesitate to reach out via email.
         <br><br>
-        If you're keen on partnering with me, please feel free to contact me via email.
+        Let's turn data into your next big opportunity!
         <p class="signature">Adarsh</p>
       </div>
       
       <div class="about-us__image-aboutImg">
-        <img src="assets\aboutimg.png" alt="about-3" data-aos="fade-right" />
+        <img src="assets\aboutimg.png" alt="about-3d" data-aos="fade-right" />
       </div>
     </div>
   </section>
@@ -84,12 +87,13 @@
   <!-- START: services -->
    <section class="tools-trade" id="services">
     <h2 class="tools-trade__title" data-aos="flip-up">
-      services
+      <!-- tools of the trade -->services
     </h2>
     <div class="ag-format-container" data-aos="fade-up">
       <div class="ag-services_box">
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
+            <!-- <a href="html/da.html" class="ag-services-item_link"> -->
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -98,11 +102,11 @@
             <div class="ag-services-item_date-box">
               Uncover actionable insights and drive strategic initiatives
             </div>
-          </a>
+          </div>
         </div>
     
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -111,11 +115,11 @@
             <div class="ag-services-item_date-box">
               Crafting intuitive and insightful dashboards
             </div>
-          </a>
+          </div>
         </div>
     
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -124,11 +128,11 @@
             <div class="ag-services-item_date-box">
               Solving complex business problems using ML
             </div>
-          </a>
+          </div>
         </div>
     
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -139,11 +143,11 @@
               Offering creative and impactful designs
               
             </div>
-          </a>
+          </div>
         </div>
     
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -152,15 +156,15 @@
     
             <div class="ag-services-item_date-box">
               Developing user-centric UI/UX for websites
-              <!-- <span class="ag-services-item_date">
-                
+             <!-- <span class="ag-services-item_date">
+                1234567
               </span> -->
             </div>
-          </a>
+          </div>
         </div>
     
         <div class="ag-services_item">
-          <a href="#" class="ag-services-item_link">
+          <div class="ag-services-item_link">
             <div class="ag-services-item_bg"></div>
     
             <div class="ag-services-item_title">
@@ -169,16 +173,13 @@
             <div class="ag-services-item_date-box">
               Building custom, scalable Python applications
             </div>
-          </a>
+          </div>
         </div>
-    
-       
-    
       </div>
     </div>
     
   </section>
-  
+  <!-- END: services -->
   
   
   
@@ -189,15 +190,15 @@
     </h2>      
   <ul class="cards" data-aos="fade-up">
     <li class="cardsList">
-      <a href="" class="card">
+      <a href="html/da.html" class="card">
         <img src="assets\da.jpg" class="card__image" alt="" />
         <div class="card__overlay">
           <div class="card__header">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
             <img class="card__thumb" src="assets\da.svg" alt="" />
             <div class="card__header-text">
-              <h3 class="card__title">Data Analysis</h3>            
-              <!-- <span class="card__status">GitHub</span> -->
+              <h3 class="card__title">Data Whisperer</h3>            
+              <span class="card__status">Taming Wild Numbers into Tidy Dashboards!</span>
             </div>
           </div>
           <p class="card__description">Learn More</p>
@@ -212,8 +213,8 @@
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
             <img class="card__thumb" src="assets\ml.png" alt="" />
             <div class="card__header-text">
-              <h3 class="card__title">Machine Learning</h3>
-              <!-- <span class="card__status">3 hours ago</span> -->
+              <h3 class="card__title">AI Maestro</h3>
+              <span class="card__status">Harnessing AI to Unleash Intelligent Solutions!!</span>
             </div>
           </div>
           <p class="card__description">Learn More</p>
@@ -221,68 +222,21 @@
       </a>
     </li>
     <li class="cardsList">
-      <a href="" class="card">
+      <a href="html/ui.html" class="card">
         <img src="assets\ui.jpg" class="card__image" alt="" />
         <div class="card__overlay">
           <div class="card__header">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
             <img class="card__thumb" src="assets\uiux.png" alt="" />
             <div class="card__header-text">
-              <h3 class="card__title">Designing</h3>
-              <!-- <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>             -->
-              <!-- <span class="card__status">1 hour ago</span> -->
+              <h3 class="card__title">UI-topia</h3>
+              <span class="card__status">Crafting Digital Experiences with Precision!</span>
             </div>
           </div>
           <p class="card__description">Learn More</p>
         </div>
       </a>
     </li>
-    <!-- <li>
-      <a href="" class="card">
-        <img src="assets\titanic3.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">kim Cattrall</h3>
-              <span class="card__status">3 hours ago</span>
-            </div>          
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>    
-    <a href="" class="card">
-      <img src="assets\titanic3.jpg" class="card__image" alt="" />
-      <div class="card__overlay">
-        <div class="card__header">
-          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-          <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>            
-            <span class="card__status">1 hour ago</span>
-          </div>
-        </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-      </div>
-    </a>      
-  </li>
-  <a href="" class="card">
-    <img src="assets\titanic3.jpg" class="card__image" alt="" />
-    <div class="card__overlay">
-      <div class="card__header">
-        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-        <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-        <div class="card__header-text">
-          <h3 class="card__title">Jessica Parker</h3>            
-          <span class="card__status">1 hour ago</span>
-        </div>
-      </div>
-      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-    </div>
-  </a>      
-</li> -->
   </ul>
 </div>
 </section>
@@ -290,7 +244,7 @@
 
 
   <!-- START: blogs -->
-<!--   
+<!-- 
 <section class="blogs-section">
   <h2 class="project__title" data-aos="flip-up">
     blogs
@@ -389,6 +343,10 @@
 
   <!-- Type module is necessary in order to use ECMAScript module (import/export) -->
   <script src="js/script.js" type="module"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
 </body>
 
 </html>
