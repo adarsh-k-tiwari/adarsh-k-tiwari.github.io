@@ -9,15 +9,12 @@
   padding-left: 64px;
   letter-spacing: -0.01em;
 }
-.tools-trade{
-  margin-top: 48px;
-}
+
 .ag-format-container {
   width: 1142px;
   margin: auto auto;
-  padding-top: 72px;
+  padding-top: 4em;
 }
-
 
 .ag-services_box {
   display: -webkit-box;
@@ -28,28 +25,25 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   padding: 50px 0;
 }
+
 .ag-services_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
-
   margin: 0 15px 30px;
-
   overflow: hidden;
-
   border-radius: 28px;
 }
+
 .ag-services-item_link {
   display: block;
   padding: 30px 20px;
   background-color: #121212;
-
   overflow: hidden;
-
   position: relative;
 }
+
 .ag-services-item_link:hover,
 .ag-services-item_link:hover .ag-services-item_date {
   text-decoration: none;
@@ -63,13 +57,10 @@
 .ag-services-item_title {
   min-height: 78px;
   margin: 0 0 20px;
-
   overflow: hidden;
-
   font-weight: bold;
   font-size: 26px;
   color: #FFF;
-
   z-index: 2;
   position: relative;
 }
@@ -94,14 +85,12 @@
 .ag-services-item_date-box {
   font-size: 18px;
   color: #FFF;
-
   z-index: 2;
   position: relative;
 }
 .ag-services-item_date {
   font-weight: bold;
   color: #a3d3ee;
-
   -webkit-transition: color .5s ease;
   -o-transition: color .5s ease;
   transition: color .5s ease
@@ -110,14 +99,11 @@
   height: 128px;
   width: 128px;
   background-color: #e6af50;
-
   z-index: 1;
   position: absolute;
   top: -75px;
   right: -75px;
-
   border-radius: 50%;
-
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
