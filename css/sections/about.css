@@ -1,6 +1,6 @@
 .about-us {
     display: flex;
-    min-height: 720px;
+    min-height: 640px;
     overflow: hidden;
     flex-direction: row;
   }
@@ -19,19 +19,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
-  .about-us__image-aboutImg {  
+  /* .about-us__image-aboutImg {  
     background-image: url("/assets/aboutimg.png")
-  }
+  } */
   
   .about-us__image-aboutImg img {
-    width:646px;
-    height: 564px;
+    width:650px;
+    height: 580px;
   }
 
   .subtitle{
