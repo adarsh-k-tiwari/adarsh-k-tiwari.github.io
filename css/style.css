@@ -98,33 +98,21 @@ a {
   }
 
 
-  
-/* Hide scrollbar for Chrome, Safari and Opera */
-.sushi__hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.sushi__hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 /* START: about us media queries */
 @media screen and (max-width: 1024px) {
-  .about-me {
+  .about-us {
     flex-direction: column-reverse;
     margin: 0px;
   }
 
-  .about-me__image-aboutImg {
+  .about-us__image-aboutImg {
     width: 100%;
     float: center;
     z-index:-1;
     object-fit: contain;
   }
 
-  .about-me__content {
+  .about-us__content {
     padding: 0px 64px 0px 64px;
     text-align: justify;
     font-size: 1em;
@@ -132,33 +120,33 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-  .about-me__image-aboutImg {
+  .about-us__image-aboutImg {
     border-right: none;
     width: 100%;
     float: right;
     overflow: clip;
     object-fit: contain;
   }
-  .about-me__content {
+  .about-us__content {
     padding: 0px 128px 0px 64px;
     text-align: justify;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .about-me__image-aboutImg img {
+  .about-us__image-aboutImg img {
     width: 100%;
     float: right;
     overflow: clip;
     object-fit: contain;
   }
 
-  .about-me__image-aboutImg div {
+  .about-us__image-aboutImg div {
     padding: 1rem;
   }
 
 
-  .about-me__content {
+  .about-us__content {
     padding: 0px 0px 0px 64px;
     text-align: justify;
   }
